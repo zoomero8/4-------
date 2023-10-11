@@ -1,47 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма обратной связи</title>
-    <link href="CSS/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>
-    <form action="index.php" method="post">
-        <label for="fio">ФИО:</label>
-        <input type="text" id="fio" name="fio" required><br><br>
-
-        <label for="email">Ваш е-mail:</label>
-        <input type="email" id="email" name="email" placeholder="email@email.com" required><br><br>
-
-        <label for="message">Сообщение:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-        <select id="topic" name="topic" required>
-            <option value="Предложение">Предложение</option>
-            <option value="Жалоба">Жалоба</option>
-        </select><br>
-
-        <div class="form-field margins">
-            <label for="file">
-            <h3>Вложения:</h3>
-            </label>
-            <input type="file" id="file" name="file">
-            </div>
-
-        <label for="consent">Даю согласие на обработку данных:</label>
-        <input type="checkbox" id="consent" name="consent"><br><br>
-
-        <p><label>Как вы узнали о нас?</label></p>
-        <div class="radio-group">
-            <input type="radio" id="internet" name="source" value="Реклама из интернета" required>
-            <label for="internet">Реклама из интернета</label>
-            
-            <input type="radio" id="friends" name="source" value="Рассказали друзья" required>
-            <label for="friends">Рассказали друзья</label>
-        </div><br>
-
-        <input type="submit" value="Отправить">
-    </form>
-</body>
 </html>
